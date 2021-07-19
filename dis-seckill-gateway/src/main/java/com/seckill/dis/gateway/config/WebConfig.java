@@ -1,3 +1,4 @@
+/*
 package com.seckill.dis.gateway.config;
 
 
@@ -13,11 +14,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.List;
 
+*/
 /**
  * 自定义web配置
  *
  * @author noodle
- */
+ *//*
+
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
@@ -29,11 +32,13 @@ public class WebConfig implements WebMvcConfigurer {
     @Autowired
     AccessInterceptor accessInterceptor;
 
-    /**
+    */
+/**
      * 添加自定义的参数解析器到MVC配置中
      *
      * @param argumentResolvers
-     */
+     *//*
+
     @Override
     public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
         logger.info("添加自定义的参数解析器");
@@ -41,14 +46,17 @@ public class WebConfig implements WebMvcConfigurer {
         argumentResolvers.add(userArgumentResolver);
     }
 
-    /**
+    */
+/**
      * 添加自定义方法拦截器到MVC配置中
      *
      * @param registry
-     */
+     *//*
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         logger.info("添加请求拦截器");
         registry.addInterceptor(accessInterceptor);
     }
 }
+*/
